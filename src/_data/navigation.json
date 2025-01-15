@@ -1,13 +1,13 @@
 {
   "items": [
     {
-      "text": "About",
-      "url": "/pages/about",
+      "text": "Home",
+      "url": "/",
       "external": false
     },
     {
-      "text": "Streaming",
-      "url": "/pages/streaming",
+      "text": "Blog",
+      "url": "/archive",
       "external": false
     },
     {
@@ -16,9 +16,19 @@
       "external": false
     },
     {
-      "text": "Social",
-      "url": "/pages/social",
-      "external": false
+      "text": "Streaming",
+      "url": "https://nickyt.live",
+      "external": true
+    },
+    {
+      "text": "Newsletter",
+      "url": "/pages/newsletter",
+      "external": true
+    },
+    {
+      "text": "Socials",
+      "url": "https://nickyt.online",
+      "external": true
     },
     {
       "text": "Uses",
@@ -26,13 +36,8 @@
       "external": false
     },
     {
-      "text": "Newsletter",
-      "url": "https://newsletter.iamdeveloper.com",
-      "external": true
-    },
-    {
-      "text": "Thanks",
-      "url": "/pages/thanks",
+      "text": "About",
+      "url": "/pages/about",
       "external": false
     },
     {

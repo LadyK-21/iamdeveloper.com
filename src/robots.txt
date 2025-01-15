@@ -1,5 +1,0 @@
-Sitemap: https://www.iamdeveloper.com/sitemap.xml
-
-User-agent: *
-
-Disallow:

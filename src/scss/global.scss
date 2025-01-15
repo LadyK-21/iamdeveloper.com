@@ -1,16 +1,16 @@
-@import 'config';
+@import "config";
 
 // Pull in the stalfos lib
-@import '../../node_modules/stalfos/stalfos.scss';
+@import "../../node_modules/stalfos/stalfos.scss";
 
 // Local mixins
-@import 'mixins/dark-mode';
-@import 'mixins/stephify';
+@import "mixins/dark-mode";
+@import "mixins/stephify";
 
-@import 'theme';
+@import "theme";
 
 // Local dependencies
-@import 'typography';
+@import "typography";
 
 /**
  * GLOBAL STYLES
@@ -18,10 +18,10 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
 }
@@ -61,32 +61,70 @@ img {
  */
 
 // Utils
-@import 'utilities/inner-wrapper';
-@import 'utilities/visually-hidden';
-@import 'utilities/wrapper';
+@import "utilities/inner-wrapper";
+@import "utilities/visually-hidden";
+@import "utilities/wrapper";
 
 // Components
-@import 'components/button';
-@import 'components/form';
-@import 'components/heading-permalink';
-@import 'components/intro';
-@import 'components/nav';
-@import 'components/pagination';
-@import 'components/post';
-@import 'components/post-list';
-@import 'components/site-head';
-@import 'components/site-foot';
-@import 'components/skip-link';
-@import 'components/syntax-highlighting';
-@import 'components/video-player';
+@import "components/button";
+@import "components/form";
+@import "components/heading-permalink";
+@import "components/intro";
+@import "components/nav";
+@import "components/pagination";
+@import "components/post";
+@import "components/post-list";
+@import "components/site-head";
+@import "components/site-foot";
+@import "components/skip-link";
+@import "components/syntax-highlighting";
+@import "components/video-player";
 
 .theme-toggle .button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
   border-radius: 50%;
 }
 
 .video-panel {
   display: flex;
-  gap: 1rem;
+  gap: 3.5rem;
   flex-wrap: wrap;
   justify-content: center;
+
+  .video-thumbnail {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    place-items: center;
+    text-align: center;
+    line-height: 1.25;
+    font-size: 0.8em;
+
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-col {
+  flex-direction: column;
 }
